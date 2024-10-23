@@ -21,18 +21,9 @@
 
 
 import React from 'react';
-import {View, Text, StatusBar, Image, ScrollView} from 'react-native';
-import Icon from "react-native-vector-icons/FontAwesome6";
+import {Text, StatusBar, ScrollView} from 'react-native';
+import Movie from './components/Movie.js';
 
-
-const Movie = ({title, year, icon_name, poster}) => {
-    return (
-        <ScrollView>
-            <Image source={poster} style={{width:400, height: 400}}/>
-            <Icon name = {icon_name} size={20}><Text>{title} {year}</Text></Icon>
-        </ScrollView>
-    );
-}
 
 const App = () => {
   return (
